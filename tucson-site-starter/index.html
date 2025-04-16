@@ -1,14 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Let’s Live in Tucson</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get More Home for Less in Arizona</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    iframe {
+      width: 100%;
+      border: none;
+    }
+    h1 {
+      text-align: center;
+      color: #1f2937;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding: 50px;">
-  <h1>Welcome to Tucson 🌵</h1>
-  <p>Get more home for less. Clean air, sunshine, and a better lifestyle await.</p>
-  <a href="escape-smoke.html" style="margin-top:20px; display:inline-block;">Or try our “Escape the Smoke” page ➤</a>
+<body>
+
+  <section>
+    <h1>🏠 Get More Home for Less in Arizona</h1>
+    
+    <!-- Embed Tally Form -->
+    <iframe 
+      data-tally-src="https://tally.so/embed/3x6EYE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+      loading="lazy" 
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0" 
+      title="Tucson Relocation Form">
+    </iframe>
+    <script>
+      var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+        "undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((e)=>{
+          e.src=e.dataset.tallySrc;
+        });
+      };
+      if("undefined"==typeof Tally){
+        var s=d.createElement("script");
+        s.src=w,s.onload=v,s.type="text/javascript",d.body.appendChild(s);
+      } else v();
+    </script>
+
+    <hr style="margin: 3rem 0;">
+
+    <!-- Embed Calendly -->
+    <div 
+      class="calendly-inline-widget" 
+      data-url="https://calendly.com/YOUR_USERNAME/YOUR_EVENT" 
+      style="min-width:320px;height:700px;">
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  </section>
+
 </body>
 </html>
