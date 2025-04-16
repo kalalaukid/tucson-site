@@ -3,70 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get More Home for Less in Arizona</title>
+  <title>Get More Home for Less in Tucson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f7f7f7;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
     }
-    section {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    header {
+      background-image: url('https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'); 
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
     iframe {
       width: 100%;
+      max-width: 800px;
+      height: 600px;
       border: none;
-    }
-    h1 {
-      text-align: center;
-      color: #1f2937;
+      margin: 2rem auto;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <section>
-    <h1>🏠 Get More Home for Less in Arizona</h1>
-    
-    <!-- Embed Tally Form -->
-    <iframe 
-      data-tally-src="https://tally.so/embed/3x6EYE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-      loading="lazy" 
-      width="100%" 
-      height="600" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0" 
-      title="Tucson Relocation Form">
-    </iframe>
-    <script>
-      var d=document,w="https://tally.so/widgets/embed.js",v=function(){
-        "undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((e)=>{
-          e.src=e.dataset.tallySrc;
-        });
-      };
-      if("undefined"==typeof Tally){
-        var s=d.createElement("script");
-        s.src=w,s.onload=v,s.type="text/javascript",d.body.appendChild(s);
-      } else v();
-    </script>
+  <header>
+    <h1>🏜️ Get More Home for Less in Tucson</h1>
+  </header>
 
-    <hr style="margin: 3rem 0;">
+  <div class="section">
+    <h2>Why pay more for less in California?</h2>
+    <p>
+      For the same $750K, you could be living in Arizona with:<br />
+      ✅ A spacious modern home <br />
+      ✅ Stunning mountain views <br />
+      ✅ A backyard pool and room to breathe <br />
+      ✅ Lower taxes & cost of living <br /><br />
+      Find out what your money gets you in Tucson 👇
+    </p>
+  </div>
 
-    <!-- Embed Calendly -->
-    <div 
-      class="calendly-inline-widget" 
-      data-url="https://calendly.com/YOUR_USERNAME/YOUR_EVENT" 
-      style="min-width:320px;height:700px;">
-    </div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- Tally Form Embed -->
+  <iframe data-tally-src="https://tally.so/embed/3x6EYE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Tucson Lead Form"></iframe>
+  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){if(typeof Tally!=="undefined")return;Tally={load:function(e){var t=document.createElement("script");t.src=w,t.onload=e,document.body.appendChild(t)}};v();</script>
 
-  </section>
+  <div class="section">
+    <h2>📅 Book a Call</h2>
+    <p>Want to talk it out? Grab a time on my calendar below!</p>
+    <!-- Calendly Embed -->
+    <iframe src="https://calendly.com/joshua-real-estate/relocate-to-tucson" width="100%" height="630" frameborder="0"></iframe>
+  </div>
 
 </body>
 </html>
